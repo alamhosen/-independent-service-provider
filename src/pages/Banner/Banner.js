@@ -13,15 +13,16 @@ const Banner = () => {
         return (
             <div>
                 <Carousel activeIndex={index} onSelect={handleSelect}>
-                    <Carousel.Item>
+                <Carousel.Item>
                         <img
-                            className="d-block w-10"
+                            className="d-block w-100"
                             src={wedding}
-                            alt="First slide"
+                            alt="Second slide"
                         />
+
                         <Carousel.Caption>
-                            <h3>Wedding Photography</h3>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            <h3>Portrait Photography</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>

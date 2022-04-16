@@ -1,49 +1,75 @@
 import React from 'react';
-import { Card, CardGroup } from 'react-bootstrap';
+import { Button, Card, CardGroup } from 'react-bootstrap';
+import wedding from '../../images/services/wedding-service.jpg'
+import engagement from '../../images/services/engagement-service.jpg'
+import portrait from '../../images/services/portrait-service.jpg'
 
 const Services = () => {
     return (
-        <div>
-            <CardGroup>
-                <Card>
-                    <Card.Img variant="top" src="holder.js/100px160" />
+        <div className='container'>
+            <div className='my-4'>
+            <h2>My Services</h2>
+            <p>DO YOU WANT ME TO SHOOT YOU?</p>
+            </div>
+            <CardGroup className=''>
+                <Card className='me-4 border-0'>
+                    <Card.Img variant="top" src={wedding} />
                     <Card.Body>
-                        <Card.Title>Card title</Card.Title>
+                        <Card.Title>Wedding Package</Card.Title>
+                        <h4>$800</h4>
                         <Card.Text>
-                            This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.
+                            <div className='text-start'>
+                                <ul>
+                                    <li>On-location Portrait Session</li>
+                                    <li>Styling Recommendations</li>
+                                    <li>200 High-res Artistically Edited Digital Images</li>
+                                    <li>Shoot online gallery</li>
+                                    <li>Royal free images on USB </li>
+                                </ul>
+                            </div>
                         </Card.Text>
                     </Card.Body>
-                    <Card.Footer>
-                        <small className="text-muted">Last updated 3 mins ago</small>
-                    </Card.Footer>
+                    <Button variant="primary">Checkout Now</Button>
                 </Card>
-                <Card>
-                    <Card.Img variant="top" src="holder.js/100px160" />
+                <Card className='me-4 border-0'>
+                    <Card.Img variant="top" src={engagement} />
                     <Card.Body>
-                        <Card.Title>Card title</Card.Title>
+                        <Card.Title>Engagement Package</Card.Title>
+                        <h4>$750</h4>
                         <Card.Text>
-                            This card has supporting text below as a natural lead-in to additional
-                            content.{' '}
+                        <div className='text-start'>
+                                <ul>
+                                    <li>On-location Portrait Session</li>
+                                    <li> Everyday clothes</li>
+                                    <li>50 High-res Artistically Edited Digital Images</li>
+                                    <li>License for Unlimited Personal Use</li>
+                                    
+                                </ul>
+                            </div>
                         </Card.Text>
                     </Card.Body>
-                    <Card.Footer>
-                        <small className="text-muted">Last updated 3 mins ago</small>
-                    </Card.Footer>
+
+                    <Button variant="primary">Checkout Now</Button>
+
                 </Card>
-                <Card>
-                    <Card.Img variant="top" src="holder.js/100px160" />
+                <Card className='border-0'>
+                    <Card.Img variant="top" src={portrait} />
                     <Card.Body>
-                        <Card.Title>Card title</Card.Title>
+                        <Card.Title>Portrait Package</Card.Title>
+                        <h4>$450</h4>
                         <Card.Text>
-                            This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This card has even longer content than the first to
-                            show that equal height action.
+                        <div className='text-start'>
+                                <ul>
+                                   <li>Coverage of Morning Sessions</li>
+                                   <li>Styling Recommendations</li>
+                                   <li>Meals Sitdown celebrations in Digital Images</li>
+                                   <li>License for Unlimited Personal Use</li>
+                                    
+                                </ul>
+                            </div>
                         </Card.Text>
                     </Card.Body>
-                    <Card.Footer>
-                        <small className="text-muted">Last updated 3 mins ago</small>
-                    </Card.Footer>
+                    <Button variant="primary">Checkout Now</Button>
                 </Card>
             </CardGroup>
         </div>
