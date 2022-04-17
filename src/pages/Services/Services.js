@@ -3,8 +3,15 @@ import { Button, Card, CardGroup } from 'react-bootstrap';
 import wedding from '../../images/services/wedding-service.jpg'
 import engagement from '../../images/services/engagement-service.jpg'
 import portrait from '../../images/services/portrait-service.jpg'
+import { useNavigate } from 'react-router-dom';
 
 const Services = () => {
+    const navigate = useNavigate();
+
+    const handleCheckOut = () =>{
+        navigate('/checkout')
+    }
+
     return (
         <div className='container'>
             <div className='my-4'>
@@ -31,7 +38,7 @@ const Services = () => {
                             </div>
                         </Card.Text>
                     </Card.Body>
-                    <Button variant="primary">Checkout Now</Button>
+                    <Button onClick={handleCheckOut} variant="primary">Checkout Now</Button>
                 </Card>
                 <Card className='me-4 border-0 text-center'>
                     <Card.Img variant="top" src={engagement} />
@@ -51,7 +58,7 @@ const Services = () => {
                         </Card.Text>
                     </Card.Body>
 
-                    <Button variant="primary">Checkout Now</Button>
+                    <Button onClick={handleCheckOut} variant="primary">Checkout Now</Button>
 
                 </Card>
                 <Card className='border-0 text-center'>
@@ -71,7 +78,7 @@ const Services = () => {
                             </div>
                         </Card.Text>
                     </Card.Body>
-                    <Button variant="primary">Checkout Now</Button>
+                    <Button onClick={handleCheckOut}  variant="primary">Checkout Now</Button>
                 </Card>
             </CardGroup>
         </div>
