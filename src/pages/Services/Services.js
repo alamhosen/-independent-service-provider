@@ -8,11 +8,13 @@ const Services = () => {
     return (
         <div className='container'>
             <div className='my-4'>
+            <div className='text-center'>
             <h2>My Services</h2>
             <p>DO YOU WANT ME TO SHOOT YOU?</p>
             </div>
+            </div>
             <CardGroup className=''>
-                <Card className='me-4 border-0'>
+                <Card className='me-4 border-0 text-center'>
                     <Card.Img variant="top" src={wedding} />
                     <Card.Body>
                         <Card.Title>Wedding Package</Card.Title>
@@ -31,7 +33,7 @@ const Services = () => {
                     </Card.Body>
                     <Button variant="primary">Checkout Now</Button>
                 </Card>
-                <Card className='me-4 border-0'>
+                <Card className='me-4 border-0 text-center'>
                     <Card.Img variant="top" src={engagement} />
                     <Card.Body>
                         <Card.Title>Engagement Package</Card.Title>
@@ -52,7 +54,7 @@ const Services = () => {
                     <Button variant="primary">Checkout Now</Button>
 
                 </Card>
-                <Card className='border-0'>
+                <Card className='border-0 text-center'>
                     <Card.Img variant="top" src={portrait} />
                     <Card.Body>
                         <Card.Title>Portrait Package</Card.Title>
