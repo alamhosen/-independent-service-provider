@@ -7,7 +7,8 @@ import { Link, useNavigate } from 'react-router-dom';
 const Login = () => {
     const emailRef = useRef('');
     const passwordRef = useRef('');
-    const navigate = useNavigate()
+    const navigate = useNavigate();
+    let errorElement;
 
     // sign in with email and password
     const [
@@ -21,6 +22,11 @@ const Login = () => {
       const [sendPasswordResetEmail, sending, resetPasswordError] = useSendPasswordResetEmail(
         auth
       );
+
+      // handle error
+      if (error || resetPasswordError){
+        errorElement = <p className='text-danger'>Error: {error?.message}</p>
+      }
 
       if(user){
           navigate('/home')
@@ -64,6 +70,7 @@ const Login = () => {
                     Login
                 </Button>
             </Form>
+            {errorElement}
             <p>New to Photo Photo Galleria? <Link to='/register' className='btn btn-link text-primary pu-auto text-decoration-none'>Please Register</Link></p>
             <p className=''>Forget Password? <button onClick={resetPassword} className='btn btn-link text-primary pu-auto text-decoration-none' >Reset Password</button>
             </p>
