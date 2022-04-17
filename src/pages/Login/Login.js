@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import auth from '../../firebase.init';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 
 const Login = () => {
@@ -9,6 +9,7 @@ const Login = () => {
     const passwordRef = useRef('');
     const navigate = useNavigate()
 
+    // sign in with email and password
     const [
         signInWithEmailAndPassword,
         user,
@@ -16,8 +17,28 @@ const Login = () => {
         error,
       ] = useSignInWithEmailAndPassword(auth);
 
+      // reset password
+      const [sendPasswordResetEmail, sending, resetPasswordError] = useSendPasswordResetEmail(
+        auth
+      );
+
       if(user){
           navigate('/home')
+      }
+
+      const resetPassword = async() =>{
+          const email = emailRef.current.value;
+
+          if(email){
+            await sendPasswordResetEmail(email);
+            // toast('Sent email');
+            alert('Sent Email')
+        }
+        else{
+            // toast('Please enter your email address')
+            alert('Please enter your email address')
+        }
+
       }
 
     const handleSubmit = event =>{
@@ -44,7 +65,7 @@ const Login = () => {
                 </Button>
             </Form>
             <p>New to Photo Photo Galleria? <Link to='/register' className='btn btn-link text-primary pu-auto text-decoration-none'>Please Register</Link></p>
-            <p className=''>Forget Password? <button className='btn btn-link text-primary pu-auto text-decoration-none' >Reset Password</button>
+            <p className=''>Forget Password? <button onClick={resetPassword} className='btn btn-link text-primary pu-auto text-decoration-none' >Reset Password</button>
             </p>
         </div>
     );
