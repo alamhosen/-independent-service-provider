@@ -1,4 +1,22 @@
-# Getting Started with Create React App
+# [Photo Galleria]()
+
+## What I have done in this project?
+* I have used react-bootstrap navbar to create a responsive navbar.
+* React bootstrap carousel used to create image slider.
+* React bootstrap card used to show services section.
+* React bootstrap form used to create login, registration, and checkout page.
+* I have used react firebase to make authentication in the login and register page.
+* I have created a blogs route where I gave answers of the questions.
+
+## Which technologies I have used in this project?
+* React.js
+* React Bootstrap
+* React router
+* Google firebase
+* React firebase hooks
+* React-Toastify
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
