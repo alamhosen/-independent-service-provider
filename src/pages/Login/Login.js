@@ -75,8 +75,8 @@ const Login = () => {
                 </Button>
             </Form>
             {errorElement}
-            <p>New to Photo Photo Galleria? <Link to='/register' className='btn btn-link text-primary pu-auto text-decoration-none'>Please Register</Link></p>
-            <p className=''>Forget Password? <button onClick={resetPassword} className='btn btn-link text-primary pu-auto text-decoration-none' >Reset Password</button>
+            <p className='text-center mt-3'>New to Photo Photo Galleria? <Link to='/register' className='btn btn-link text-primary pu-auto text-decoration-none'>Please Register</Link></p>
+            <p className='text-center'>Forget Password? <button onClick={resetPassword} className='btn btn-link text-primary pu-auto text-decoration-none' >Reset Password</button>
             </p>
             <SocialLogin></SocialLogin>
             <ToastContainer />

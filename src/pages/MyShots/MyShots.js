@@ -9,7 +9,7 @@ import img6 from '../../images/shots/6.jpg'
 
 const MyShots = () => {
     return (
-        <div className=''>
+        <div id='shots'>
             <h2 className='text-center my-4'>My Awesome Shots</h2>
             <Container>
                 <Row>
