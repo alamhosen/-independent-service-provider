@@ -13,7 +13,7 @@ const MyShots = () => {
             <h2 className='text-center my-4'>My Awesome Shots</h2>
             <Container>
                 <Row>
-                    <Col className='col-lg-4 col-md-6 col-sm-12 col-12 mb-4 '>
+                    <Col className='col-lg-4 col-md-12 col-sm-12 col-12 mb-2 '>
                         <img
                             src={img1}
                             className="w-100 shadow-1-strong rounded mb-4"
@@ -26,7 +26,7 @@ const MyShots = () => {
                             alt="Wintry Mountain Landscape"
                         />
                     </Col>
-                    <Col className='col-lg-4 col-md-6 col-sm-12 col-12 mb-4 '>
+                    <Col className='col-lg-4 col-md-12 col-sm-12 col-12 mb-2 '>
                         <img
                             src={img3}
                             className="w-100 shadow-1-strong rounded mb-4"
@@ -39,7 +39,7 @@ const MyShots = () => {
                             alt="Boat on Calm Water"
                         />
                     </Col>
-                    <Col className='col-lg-4 col-md-6 col-sm-12 col-12 mb-4 '>
+                    <Col className='col-lg-4 col-md-12 col-sm-12 col-12 mb-2 '>
                         <img
                             src={img5}
                             className="w-100 shadow-1-strong rounded mb-4"
