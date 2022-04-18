@@ -21,8 +21,8 @@ const Banner = () => {
                         />
 
                         <Carousel.Caption>
-                            <h3>Portrait Photography</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h3>Wedding Photography</h3>
+                            <p>Your Style of Wedding</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -34,7 +34,7 @@ const Banner = () => {
 
                         <Carousel.Caption>
                             <h3>Portrait Photography</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>A portrait is not made in the camera but on either side of it</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -47,7 +47,7 @@ const Banner = () => {
                         <Carousel.Caption>
                             <h3>Engagement Photography</h3>
                             <p>
-                                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                                Priceless Event of Your Life
                             </p>
                         </Carousel.Caption>
                     </Carousel.Item>
