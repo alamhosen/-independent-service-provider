@@ -30,7 +30,7 @@ const Header = () => {
                                 Checkout
                             </Nav.Link>
 
-                            <Nav.Link href="#memes">
+                            <Nav.Link as={Link} to='/about'>
                                 About Me
                             </Nav.Link>
                         </Nav>
